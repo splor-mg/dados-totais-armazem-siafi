@@ -7,7 +7,7 @@ OUTPUT_FILES := $(addsuffix .json,$(addprefix logs/transform/,$(RESOURCE_NAMES))
 all: extract validate transform build check
 
 extract: 
-	$(foreach resource_name, $(RESOURCE_NAMES),python main.py extract $(resource_name) &&) true
+	Rscript scripts/extract.R 
 
 validate: 
 	frictionless validate datapackage.yaml

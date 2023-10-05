@@ -1,4 +1,5 @@
 Package: totais-siafi
 Imports:
-    renv
+    renv,
+    gmailr
 Encoding: UTF-8

@@ -1,14 +1,13 @@
-name: totais-siafi
 resources:
-  - name: fact
-    path: data-raw/fact.txt
+  - name: totais_execucao_siafi
+    type: table
+    path: ['data-raw/totais_execucao_siafi.csv', 'data-raw/totais_execucao_siafi_historico.csv']
+    scheme: file
     format: csv
+    mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/fact.yaml
-  - name: dim
-    path: data-raw/dim.txt
-    format: csv
-    encoding: utf-8
-    dialect: dialect.yaml
-    schema: schemas/dim.yaml
+    schema: schemas/totais_execucao-siafi.yaml
+    
+
+   

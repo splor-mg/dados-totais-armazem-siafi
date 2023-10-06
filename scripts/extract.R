@@ -7,7 +7,6 @@ gm_auth(token = gm_token_read(
 ))
 
 
-
 #retorna message_id e thread_id
 exec = gm_messages(
   search = 'totais newer_than:1d'
@@ -19,6 +18,7 @@ ids = gm_id(exec)
 #salva o anexo
 for (i in ids){
   gm_save_attachments(gm_message(i), path = 'data-raw')
+ fileSnapshot
   
 }
 

@@ -1,4 +1,3 @@
-print(.libPaths())
 library(gmailr)
 
 gm_auth(token = gm_token_read(
@@ -7,26 +6,21 @@ gm_auth(token = gm_token_read(
 ))
 
 
+
 #retorna message_id e thread_id
-exec = gm_messages(
-  search = 'totais newer_than:1d'
+msg = gm_messages(
+  search =  "subject:(totais siafi) .csv  newer_than:1d"
 )
 
 #retorna message_id
-ids = gm_id(exec)
+ids = gm_id(msg)
 
 #salva o anexo
 for (i in ids){
   gm_save_attachments(gm_message(i), path = 'data-raw')
- fileSnapshot
-  
 }
 
-if 
-  (length(ids) == 2){
-    print('total de bases ok')
-  }else{
-  print('verificar bases')
-  }
 
+
+  
 

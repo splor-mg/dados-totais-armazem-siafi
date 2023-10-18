@@ -9,21 +9,26 @@ fields:
     description: Mês de registro do documento siafi
   - name: Valor Despesa Empenhada
     type: number
+    decimalChar: ','
     description: >
       Valor líquido da despesa empenhada resultante da expressao: 
 
       valor inicial do empenho + valor de reforço do empenho - valor anulado do empenho - valor anulado da despesa paga
   - name: Valor Despesa Liquidada
     type: number
+    decimalChar: ','
     description: "Valor total da despesa liquidada resultante da expressao:
       valor liquidado bruto - valor anulado de saldo liquidado + valor apropriado da despesa
        - valor anulado de retenção - valor anulado de multa - valor anulado da despesa orcamentária"
   - name: Valor Liquidado Retido
     type: number
+    decimalChar: ','
     description: "Valor em reais referente as retencoes - parte da liquidação a favor de terceiros, indicado apenas para analise de um documento a liquidar específico"
-  - name: Valor Pago Financeiro
-    type: number
-    description: "Valor referente aos pagamentos efetuados através de movimentações bancárias, estruturais e apropriacao contabil da despesa"  
   - name: Valor Pago Orçamentário
     type: number
+    decimalChar: ','
     description: "Valor pago por empenho resultante da expressao: Valor ordens de pagamento + valor multas contratuais + valor renteções/consignacoes registradas por credor/empenho"
+  - name: Valor Pago Financeiro
+    type: number
+    decimalChar: ','
+    description: "Valor referente aos pagamentos efetuados através de movimentações bancárias, estruturais e apropriacao contabil da despesa"  

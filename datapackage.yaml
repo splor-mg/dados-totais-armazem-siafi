@@ -1,7 +1,7 @@
 resources:
   - name: totais_execucao_siafi
     type: table
-    path: ['data-raw/totais_execucao_siafi.csv', 'data-raw/totais_execucao_siafi_historico.csv']
+    path: 'data-raw/totais_siafi_historico.csv'
     scheme: file
     format: csv
     mediatype: text/csv

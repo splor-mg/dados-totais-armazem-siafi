@@ -6,3 +6,6 @@ data-raw/
 logs/
 datapackage.json
 __pycache__/
+*.ipynb
+.ipynb_checkpoints/
+

@@ -1,3 +1,4 @@
+name: armazem-siafi-totais-dados
 resources:
   - name: totais-execucao-siafi
     type: table
@@ -8,6 +9,3 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/totais-execucao-siafi.yaml
-    
-
-   

@@ -1,14 +1,14 @@
 fields:
   - name: Ano de Exercício
-    target: ANO
+    target: ano
     type: integer
     description: Ano de exercício do orcamento fiscal
   - name: Mês - Numérico
-    target: MES
+    target: mes
     type: integer
     description: Mês de registro do documento siafi
   - name: Valor Despesa Empenhada
-    target: VL_LOA_DESP
+    target: vlr_loa_desp
     type: number
     decimalChar: ','
     description: >
@@ -16,7 +16,7 @@ fields:
       
       valor inicial do empenho + valor de reforço do empenho - valor anulado do empenho - valor anulado da despesa paga
   - name: Valor Despesa Liquidada
-    target: VL_LIQUIDADO
+    target: vlr_liquidado
     type: number
     decimalChar: ','
     description: >
@@ -24,19 +24,19 @@ fields:
        
        valor liquidado bruto - valor anulado de saldo liquidado + valor apropriado da despesa - valor anulado de retenção - valor anulado de multa - valor anulado da despesa orcamentária
   - name: Valor Liquidado Retido
-    target: VL_LIQUIDADO_RETIDO
+    target: vlr_liquidado_retido
     type: number
     decimalChar: ','
     description: >
       Valor em reais referente as retencoes - parte da liquidação a favor de terceiros, indicado apenas para analise de um documento a liquidar específico
   - name: Valor Pago Orçamentário
-    target: VL_PAGO_ORC
+    target: vlr_pago_orc
     type: number
     decimalChar: ','
     description: >
       Valor pago por empenho resultante da expressao: Valor ordens de pagamento + valor multas contratuais + valor renteções/consignacoes registradas por credor/empenho
   - name: Valor Pago Financeiro
-    target: VL_PAGO_FIN
+    target: vlr_pago_fin
     type: number
     decimalChar: ','
     description: >

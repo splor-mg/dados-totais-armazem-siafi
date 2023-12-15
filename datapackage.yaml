@@ -1,6 +1,6 @@
 name: armazem-siafi-totais-dados
 resources:
-  - name: totais-execucao-siafi
+  - name: totais_execucao_siafi
     type: table
     path: ["data-raw/totais-siafi-execucao-current.csv", "data-raw/totais-siafi-execucao-previous.csv"]
     scheme: file

@@ -1,0 +1,60 @@
+{
+  "name": "armazem-siafi-totais-dados",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "totais_execucao_siafi",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/totais_execucao_siafi.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:88e2f6207a46c456b6260fe31e41858fb8fe194314e242272c6288be8edd5fa0",
+      "bytes": 19952,
+      "fields": 7,
+      "rows": 264,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "vlr_loa_desp",
+            "type": "number",
+            "source": "Valor Despesa Empenhada"
+          },
+          {
+            "name": "vlr_liquidado",
+            "type": "number",
+            "source": "Valor Despesa Liquidada"
+          },
+          {
+            "name": "vlr_liquidado_retido",
+            "type": "number",
+            "source": "Valor Liquidado Retido"
+          },
+          {
+            "name": "vlr_pago_orc",
+            "type": "number",
+            "source": "Valor Pago Orçamentário"
+          },
+          {
+            "name": "vlr_pago_fin",
+            "type": "number",
+            "source": "Valor Pago Financeiro"
+          }
+        ]
+      }
+    }
+  ],
+  "updated_at": "2023-12-15T15:06:25"
+}

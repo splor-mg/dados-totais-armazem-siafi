@@ -1,13 +1,17 @@
-.PHONY: all extract validate transform build check publish clean
+.PHONY: all extract delete-email validate transform build check publish clean
 
 EXT = csv
+
 RESOURCE_NAMES := $(shell python main.py resources)
 OUTPUT_FILES := $(addsuffix .csv,$(addprefix data/,$(RESOURCE_NAMES)))
 
-all: extract validate transform build check
+all: extract delete-email validate transform build check
 
 extract: 
 	Rscript scripts/extract.R 
+
+delete-email:
+	Rscript scripts/delete-email.R
 
 validate: 
 	frictionless validate datapackage.yaml

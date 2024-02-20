@@ -11,8 +11,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:253de893cde521d152cf661807fa95c10fdbc7da03ffe85b89c9356e40e48f70",
-      "bytes": 20122,
+      "hash": "sha256:7690fe481c9e8c426df509475ed62dad9e5371cd74a8ce1935d7fa72b70f2854",
+      "bytes": 20126,
       "fields": 7,
       "rows": 266,
       "schema": {
@@ -23,7 +23,7 @@
             "source": "Ano de Exercício"
           },
           {
-            "name": "mes",
+            "name": "mes_cod",
             "type": "integer",
             "source": "Mês - Numérico"
           },
@@ -299,5 +299,5 @@
       }
     }
   ],
-  "updated_at": "2024-02-20T11:46:30"
+  "updated_at": "2024-02-20T12:46:36"
 }

@@ -4,7 +4,7 @@ fields:
     type: integer
     description: Ano de exercício do orcamento fiscal
   - name: Mês - Numérico
-    target: mes
+    target: mes_cod
     type: integer
     description: Mês de registro do documento siafi
   - name: Valor Despesa Empenhada

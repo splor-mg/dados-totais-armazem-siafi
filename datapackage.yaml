@@ -9,3 +9,12 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/totais-execucao-siafi.yaml
+  - name: totais_siafi_restos_pagar
+    type: table
+    path: data-raw/totais-siafi-restos-pagar.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/totais-siafi-restos-pagar.yaml

@@ -54,7 +54,250 @@
           }
         ]
       }
+    },
+    {
+      "name": "totais_siafi_restos_pagar",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/totais_siafi_restos_pagar.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:f1b4e9118931dd108242c99c6a3abd4a0b4aa0a622a3563887190026c8ec39bc",
+      "bytes": 352684,
+      "fields": 45,
+      "rows": 2017,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano_rp",
+            "type": "integer",
+            "source": "Ano Origem Restos a Pagar"
+          },
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "vlr_inscrito_rpp",
+            "type": "number",
+            "source": "Valor Inscrito Processado"
+          },
+          {
+            "name": "vlr_cancelado_rpp",
+            "type": "number",
+            "source": "Valor Cancelado Processado"
+          },
+          {
+            "name": "vlr_restabelecido_rpp",
+            "type": "number",
+            "source": "Valor Restabelecido Processado"
+          },
+          {
+            "name": "vlr_pago_rpp",
+            "type": "number",
+            "source": "Valor Pago Processado"
+          },
+          {
+            "name": "vlr_pago_pendente_rpp",
+            "type": "number",
+            "source": "Valor Pago Pendente Processado"
+          },
+          {
+            "name": "vlr_anulacao_pagamento_rpp",
+            "type": "number",
+            "source": "Valor Anulação Pagamento Processado"
+          },
+          {
+            "name": "vlr_desconto_rpp",
+            "type": "number",
+            "source": "Valor Desconto Processado"
+          },
+          {
+            "name": "vlr_desconto_pendente_rpp",
+            "type": "number",
+            "source": "Valor Desconto Pendente Processado"
+          },
+          {
+            "name": "vlr_retencao_rpp",
+            "type": "number",
+            "source": "Valor Retenção Processado"
+          },
+          {
+            "name": "vlr_anulacao_retencao_rpp",
+            "type": "number",
+            "source": "Valor Anulação Retenção Processado"
+          },
+          {
+            "name": "vlr_retencao_rpnp",
+            "type": "number",
+            "source": "Valor Retenção Não Processado"
+          },
+          {
+            "name": "vlr_inscrito_rpnp",
+            "type": "number",
+            "source": "Valor Inscrito Não Processado"
+          },
+          {
+            "name": "vlr_cancelado_rpnp",
+            "type": "number",
+            "source": "Valor Cancelado Não Processado"
+          },
+          {
+            "name": "vlr_restabelecido_rpnp",
+            "type": "number",
+            "source": "Valor Restabelecido Não Processado"
+          },
+          {
+            "name": "vlr_pago_rpnp",
+            "type": "number",
+            "source": "Valor Pago Não Processado"
+          },
+          {
+            "name": "vlr_pago_pendente_rpnp",
+            "type": "number",
+            "source": "Valor Pago Pendente Não Processado"
+          },
+          {
+            "name": "vlr_anulacao_pagamento_rpnp",
+            "type": "number",
+            "source": "Valor Anulação Pagto Não Processado"
+          },
+          {
+            "name": "vlr_desconto_rpnp",
+            "type": "number",
+            "source": "Valor Desconto Não Processado"
+          },
+          {
+            "name": "vlr_desconto_pendente_rpnp",
+            "type": "number",
+            "source": "Valor Desconto Pendente Não Proc"
+          },
+          {
+            "name": "vlr_cancelado_rp",
+            "type": "number",
+            "source": "Valor Cancelado"
+          },
+          {
+            "name": "vlr_restabelecido_rp",
+            "type": "number",
+            "source": "Valor Restabelecido"
+          },
+          {
+            "name": "vlr_anulacao_pagamento_rp",
+            "type": "number",
+            "source": "Valor Anulação Pagamento"
+          },
+          {
+            "name": "vlr_desconto_rp",
+            "type": "number",
+            "source": "Valor Desconto"
+          },
+          {
+            "name": "vlr_liquidado_bruto_rpnp",
+            "type": "number",
+            "source": "Valor Liquidado Bruto"
+          },
+          {
+            "name": "vlr_em_liquidacao_rpnp",
+            "type": "number",
+            "source": "Valor em Liquidação"
+          },
+          {
+            "name": "valor_anulacao_saldo_liq_nao_proc",
+            "type": "number",
+            "source": "Valor Anulação Saldo Liq Não Proc"
+          },
+          {
+            "name": "valor_liquidado_retido",
+            "type": "number",
+            "source": "Valor Liquidado Retido"
+          },
+          {
+            "name": "valor_anulacao_retencao_nao_proc",
+            "type": "number",
+            "source": "Valor Anulação Retenção Não Proc"
+          },
+          {
+            "name": "valor_liquidado_multa_contratual",
+            "type": "number",
+            "source": "Valor Liquidado Multa Contratual"
+          },
+          {
+            "name": "valor_anulacao_multa_nao_processado",
+            "type": "number",
+            "source": "Valor Anulação Multa Não Processado"
+          },
+          {
+            "name": "valor_apropriacao_despesa",
+            "type": "number",
+            "source": "Valor Apropriação Despesa"
+          },
+          {
+            "name": "valor_apropriacao_multa",
+            "type": "number",
+            "source": "Valor Apropriação Multa"
+          },
+          {
+            "name": "valor_apropriacao_retencao",
+            "type": "number",
+            "source": "Valor Apropriação Retenção"
+          },
+          {
+            "name": "vlr_saldo_rpp",
+            "type": "number",
+            "source": "Saldo Restos a Pagar Processado"
+          },
+          {
+            "name": "valor_anulacao_despesa",
+            "type": "number",
+            "source": "Valor Anulação Despesa"
+          },
+          {
+            "name": "vlr_saldo_rpnp",
+            "type": "number",
+            "source": "Saldo Restos a Pagar Não Processado"
+          },
+          {
+            "name": "vlr_despesa_liquidada_rpnp",
+            "type": "number",
+            "source": "Valor Despesa Liquidada"
+          },
+          {
+            "name": "vlr_despesa_liquidada_pagar",
+            "type": "number",
+            "source": "Valor Despesa Liquidada a Pagar"
+          },
+          {
+            "name": "valor_pago_antecipado_exercicio",
+            "type": "number",
+            "source": "Valor Pago Antecipado Exercício"
+          },
+          {
+            "name": "valor_anulacao_pago_antecipado",
+            "type": "number",
+            "source": "Valor Anulação Pago Antecipado"
+          },
+          {
+            "name": "valor_pago_antecipado_exer_anterior",
+            "type": "number",
+            "source": "Valor Pago Antecipado Exer Anterior"
+          },
+          {
+            "name": "valor_pago_antecipado_liquidado",
+            "type": "number",
+            "source": "Valor Pago Antecipado Liquidado"
+          }
+        ]
+      }
     }
   ],
-  "updated_at": "2024-02-20T10:45:47"
+  "updated_at": "2024-02-20T11:46:30"
 }

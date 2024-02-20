@@ -30,13 +30,13 @@ fields:
     description: >
       Valor em reais referente as retencoes - parte da liquidação a favor de terceiros, indicado apenas para analise de um documento a liquidar específico
   - name: Valor Pago Orçamentário
-    target: vlr_pago_orc
+    target: vlr_pago_orcamentario
     type: number
     decimalChar: ','
     description: >
       Valor pago por empenho resultante da expressao: Valor ordens de pagamento + valor multas contratuais + valor renteções/consignacoes registradas por credor/empenho
   - name: Valor Pago Financeiro
-    target: vlr_pago_fin
+    target: vlr_pago_financeiro
     type: number
     decimalChar: ','
     description: >

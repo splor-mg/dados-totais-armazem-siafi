@@ -11,8 +11,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:06655bf399b21d645b99841f4e38f4e0c5cc4c792a24fd22bdf01627ef678613",
-      "bytes": 20105,
+      "hash": "sha256:bd4dd1019b8474cc5c7777f34951dbb695332335147c73b392a2ad0113fc1775",
+      "bytes": 20106,
       "fields": 7,
       "rows": 266,
       "schema": {
@@ -28,7 +28,7 @@
             "source": "Mês - Numérico"
           },
           {
-            "name": "vlr_loa_desp",
+            "name": "vlr_empenhado",
             "type": "number",
             "source": "Valor Despesa Empenhada"
           },
@@ -56,5 +56,5 @@
       }
     }
   ],
-  "updated_at": "2024-02-20T08:26:55"
+  "updated_at": "2024-02-20T10:11:25"
 }

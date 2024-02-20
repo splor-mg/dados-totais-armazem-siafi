@@ -8,7 +8,7 @@ fields:
     type: integer
     description: Mês de registro do documento siafi
   - name: Valor Despesa Empenhada
-    target: vlr_loa_desp
+    target: vlr_empenhado
     type: number
     decimalChar: ','
     description: >

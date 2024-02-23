@@ -17,7 +17,7 @@ validate:
 
 transform: $(OUTPUT_FILES)
 
-$(OUTPUT_FILES): data/%.csv: schemas/totais-execucao-siafi.yaml scripts/transform.py datapackage.yaml
+$(OUTPUT_FILES): data/%.csv: schemas/totais-execucao-siafi.yaml scripts/transform.py datapackage.yaml data-raw/*.csv
 	python main.py transform $*
 
 build: transform datapackage.json

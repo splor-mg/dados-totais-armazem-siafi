@@ -11,113 +11,155 @@ fields:
   - name: Valor Inscrito Processado
     target: vlr_inscrito_rpp
     type: number
+    decimalChar: ','
   - name: Valor Cancelado Processado
     target: vlr_cancelado_rpp
     type: number
+    decimalChar: ','
   - name: Valor Restabelecido Processado
     target: vlr_restabelecido_rpp
     type: number
+    decimalChar: ','
   - name: Valor Pago Processado
     target: vlr_pago_rpp
     type: number
+    decimalChar: ','
   - name: Valor Pago Pendente Processado
     target: vlr_pago_pendente_rpp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Pagamento Processado
     target: vlr_anulacao_pagamento_rpp
     type: number
+    decimalChar: ','
   - name: Valor Desconto Processado
     target: vlr_desconto_rpp
     type: number
+    decimalChar: ','
   - name: Valor Desconto Pendente Processado
     target: vlr_desconto_pendente_rpp
     type: number
+    decimalChar: ','
   - name: Valor Retenção Processado
     target: vlr_retencao_rpp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Retenção Processado
     target: vlr_anulacao_retencao_rpp
     type: number
+    decimalChar: ','
   - name: Valor Retenção Não Processado
     target: vlr_retencao_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Inscrito Não Processado
     target: vlr_inscrito_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Cancelado Não Processado
     target: vlr_cancelado_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Restabelecido Não Processado
     target: vlr_restabelecido_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Pago Não Processado
     target: vlr_pago_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Pago Pendente Não Processado
     target: vlr_pago_pendente_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Pagto Não Processado
     target: vlr_anulacao_pagamento_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Desconto Não Processado
     target: vlr_desconto_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Desconto Pendente Não Proc
     target: vlr_desconto_pendente_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Cancelado
     target: vlr_cancelado_rp
     type: number
+    decimalChar: ','
   - name: Valor Restabelecido
     target: vlr_restabelecido_rp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Pagamento
     target: vlr_anulacao_pagamento_rp
     type: number
+    decimalChar: ','
   - name: Valor Desconto
     target: vlr_desconto_rp
     type: number
+    decimalChar: ','
   - name: Valor Liquidado Bruto
     target: vlr_liquidado_bruto_rpnp
     type: number
+    decimalChar: ','
   - name: Valor em Liquidação
     target: vlr_em_liquidacao_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Saldo Liq Não Proc
     type: number
+    decimalChar: ','
   - name: Valor Liquidado Retido
     type: number
+    decimalChar: ','
   - name: Valor Anulação Retenção Não Proc
     type: number
+    decimalChar: ','
   - name: Valor Liquidado Multa Contratual
     type: number
+    decimalChar: ','
   - name: Valor Anulação Multa Não Processado
     type: number
+    decimalChar: ','
   - name: Valor Apropriação Despesa
     type: number
+    decimalChar: ','
   - name: Valor Apropriação Multa
     type: number
+    decimalChar: ','
   - name: Valor Apropriação Retenção
     type: number
+    decimalChar: ','
   - name: Saldo Restos a Pagar Processado
     target: vlr_saldo_rpp
     type: number
+    decimalChar: ','
   - name: Valor Anulação Despesa
     type: number
+    decimalChar: ','
   - name: Saldo Restos a Pagar Não Processado
     target: vlr_saldo_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Despesa Liquidada
     target: vlr_despesa_liquidada_rpnp
     type: number
+    decimalChar: ','
   - name: Valor Despesa Liquidada a Pagar
     target: vlr_despesa_liquidada_pagar
     type: number
+    decimalChar: ','
   - name: Valor Pago Antecipado Exercício
     type: number
+    decimalChar: ','
   - name: Valor Anulação Pago Antecipado
     type: number
+    decimalChar: ','
   - name: Valor Pago Antecipado Exer Anterior
     type: number
+    decimalChar: ','
   - name: Valor Pago Antecipado Liquidado
     type: number
+    decimalChar: ','

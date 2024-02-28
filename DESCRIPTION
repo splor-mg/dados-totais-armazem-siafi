@@ -3,5 +3,6 @@ Imports:
     renv,
     gmailr,
     purrr,
-    stringr
+    stringr,
+    logger
 Encoding: UTF-8

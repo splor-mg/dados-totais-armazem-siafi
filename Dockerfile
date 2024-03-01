@@ -6,7 +6,7 @@ RUN /rocker_scripts/install_python.sh
 
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install -y git
+RUN apt-get install -y git libcurl4-openssl-dev libssl-dev
 
 RUN echo 'alias python=python3' >> /etc/bash.bashrc
 

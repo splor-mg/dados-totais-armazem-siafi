@@ -1,8 +1,10 @@
 Package: totais-siafi
 Imports:
     renv,
-    gmailr,
+    testthat (>= 3.0.0),
+    gmailr (>= 2.0.0),
     purrr,
     stringr,
+    checks.execucao,
     logger
 Encoding: UTF-8

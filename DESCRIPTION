@@ -7,4 +7,6 @@ Imports:
     stringr,
     checks.execucao,
     logger
+Remotes:
+    github::splor-mg/checks-execucao
 Encoding: UTF-8

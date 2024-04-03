@@ -9,7 +9,7 @@ OUTPUT_FILES := $(addsuffix .csv,$(addprefix data/,$(RESOURCE_NAMES)))
 all: extract delete-email validate transform build check
 
 extract: 
-	Rscript scripts/extract.R 
+	$(PYTHON) main.py extract
 
 delete-email:
 	Rscript scripts/delete-email.R

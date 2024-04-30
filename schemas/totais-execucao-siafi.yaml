@@ -41,3 +41,11 @@ fields:
     decimalChar: ','
     description: >
       Valor referente aos pagamentos efetuados através de movimentações bancárias, estruturais e apropriacao contabil da despesa  
+  - name: Valor Cota Aprovada Líquida
+    target: vlr_cota_aprovada_liquida
+    type: number
+    decimalChar: ','
+    description: >
+      Valor líquido da cota aprovada, resultante da seguinte expressão:
+
+      valor da cota aprovada - valor anulação da cota aprovada.

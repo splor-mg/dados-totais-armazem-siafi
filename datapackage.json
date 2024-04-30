@@ -11,9 +11,9 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:eaa6b8cdd2aeef42a135737471ecb696f1e2329eaf4b92d10264311f375633d5",
-      "bytes": 20280,
-      "fields": 7,
+      "hash": "sha256:42c3257b55c16b0a6f237a020df13edf54901ac7a53a9d055368e56be09f9351",
+      "bytes": 24053,
+      "fields": 8,
       "rows": 268,
       "schema": {
         "fields": [
@@ -51,6 +51,11 @@
             "name": "vlr_pago_financeiro",
             "type": "number",
             "source": "Valor Pago Financeiro"
+          },
+          {
+            "name": "vlr_cota_aprovada_liquida",
+            "type": "number",
+            "source": "Valor Cota Aprovada Líquida"
           }
         ]
       }
@@ -299,5 +304,5 @@
       }
     }
   ],
-  "updated_at": "2024-04-30T09:48:42"
+  "updated_at": "2024-04-30T17:45:06"
 }

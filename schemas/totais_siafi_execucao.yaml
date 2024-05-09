@@ -3,10 +3,12 @@ fields:
     target: ano
     type: integer
     description: Ano de exercício do orcamento fiscal
+  
   - name: Mês - Numérico
     target: mes_cod
     type: integer
     description: Mês de registro do documento siafi
+
   - name: Valor Despesa Empenhada
     target: vlr_empenhado
     type: number
@@ -15,6 +17,7 @@ fields:
       Valor líquido da despesa empenhada resultante da expressao: 
       
       valor inicial do empenho + valor de reforço do empenho - valor anulado do empenho - valor anulado da despesa paga
+  
   - name: Valor Despesa Liquidada
     target: vlr_liquidado
     type: number
@@ -23,29 +26,24 @@ fields:
        Valor total da despesa liquidada resultante da expressao:
        
        valor liquidado bruto - valor anulado de saldo liquidado + valor apropriado da despesa - valor anulado de retenção - valor anulado de multa - valor anulado da despesa orcamentária
+  
   - name: Valor Liquidado Retido
     target: vlr_liquidado_retido
     type: number
     decimalChar: ','
     description: >
       Valor em reais referente as retencoes - parte da liquidação a favor de terceiros, indicado apenas para analise de um documento a liquidar específico
+  
   - name: Valor Pago Orçamentário
     target: vlr_pago_orcamentario
     type: number
     decimalChar: ','
     description: >
       Valor pago por empenho resultante da expressao: Valor ordens de pagamento + valor multas contratuais + valor renteções/consignacoes registradas por credor/empenho
+  
   - name: Valor Pago Financeiro
     target: vlr_pago_financeiro
     type: number
     decimalChar: ','
     description: >
       Valor referente aos pagamentos efetuados através de movimentações bancárias, estruturais e apropriacao contabil da despesa  
-  - name: Valor Cota Aprovada Líquida
-    target: vlr_cota_aprovada_liquida
-    type: number
-    decimalChar: ','
-    description: >
-      Valor líquido da cota aprovada, resultante da seguinte expressão:
-
-      valor da cota aprovada - valor anulação da cota aprovada.

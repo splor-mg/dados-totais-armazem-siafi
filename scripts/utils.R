@@ -8,4 +8,6 @@ write_attachment <- function(message_id) {
   attachment_id <- attachments[["id"]]
   result <- gmailr::gm_attachment(attachment_id, message_id)
   gmailr::gm_save_attachment(result, paste0("data-raw/", filename))
+  new_filename <- gsub("-", "_", filename)
+  file.rename(paste0("data-raw/", old_filename), paste0("data-raw/", new_filename))
   }

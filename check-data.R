@@ -2,7 +2,7 @@ library(data.table)
 library(formattable)
 library(purrr)
 
-data <- fread('C:/projects/armazem-siafi-totais-dados/data/totais_execucao_siafi.csv')
+data <- fread('C:/projects/dados-totais-armazem-siafi/data/totais_siafi_execucao.csv')
 
 names(data)
 
@@ -16,7 +16,7 @@ data[
 
 data <- data[, map(.SD, sum), by = .(ano, mes_cod), .SDcols = colunas]
 
-totals <- fread('C:/projects/armazem-siafi-totais-dados/data/totais_execucao_siafi.csv')
+totals <- fread('C:/projects/dados-totais-armazem-siafi/data/totais_siafi_execucao.csv')
 
 names(totals)
 

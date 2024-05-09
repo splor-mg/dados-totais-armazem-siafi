@@ -1,20 +1,33 @@
-name: armazem-siafi-totais-dados
+name: dados_totais_armazem_siafi
 resources:
-  - name: totais_execucao_siafi
+  - name: totais_siafi_cota
     type: table
-    path: ["data-raw/totais-siafi-execucao-current.csv", "data-raw/totais-siafi-execucao-previous.csv"]
+    path: ["data-raw/totais_siafi_cota_current.csv", "data-raw/totais_siafi_cota_previous.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/totais-execucao-siafi.yaml
+    schema: schemas/totais_siafi_execucao.yaml
+
+  - name: totais_siafi_execucao
+    type: table
+    path: ["data-raw/totais_siafi_execucao_current.csv", "data-raw/totais_siafi_execucao_previous.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/totais_siafi_execucao.yaml
+
   - name: totais_siafi_restos_pagar
     type: table
-    path: data-raw/totais-siafi-restos-pagar.csv
+    path: data-raw/totais_siafi_restos_pagar.csv
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/totais-siafi-restos-pagar.yaml
+    schema: schemas/totais_siafi_restos_pagar.yaml
+
+

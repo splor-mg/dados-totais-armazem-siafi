@@ -1,4 +1,4 @@
-# totais-siafi
+# dados_totais_armazem_siafi
 
 [![Updated](https://github.com/splor-mg/totais-siafi/actions/workflows/all.yaml/badge.svg)](https://github.com/splor-mg/totais-siafi/actions/)
 

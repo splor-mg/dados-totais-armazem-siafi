@@ -1,4 +1,4 @@
-Package: totais-siafi
+Package: dados_totais_armazem_siafi
 Imports:
     renv,
     testthat (>= 3.0.0),

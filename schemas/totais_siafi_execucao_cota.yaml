@@ -1,0 +1,19 @@
+fields:
+  - name: Ano de Exercício
+    target: ano
+    type: integer
+    description: Ano de exercício do orcamento fiscal
+  
+  - name: Mês - Numérico
+    target: mes_cod
+    type: integer
+    description: Mês de registro do documento siafi
+
+  - name: Valor Cota Aprovada Líquida
+    target: vlr_cota_aprovada_liquida
+    type: number
+    decimalChar: ','
+    description: >
+      Valor líquido da cota aprovada, resultante da seguinte expressão:
+
+      valor da cota aprovada - valor anulação da cota aprovada.

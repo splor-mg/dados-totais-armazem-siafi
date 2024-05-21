@@ -51,6 +51,11 @@
             "name": "vlr_pago_financeiro",
             "type": "number",
             "source": "Valor Pago Financeiro"
+          },
+          {
+            "name": "vlr_cota_aprovada_liquida",
+            "type": "number",
+            "source": "Valor Cota Aprovada Líquida"
           }
         ]
       }

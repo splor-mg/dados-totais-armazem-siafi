@@ -15,7 +15,7 @@ docker build --tag totais-siafi .
 Para executar o container
 
 ```bash
-docker run -it --rm --mount type=bind,source=$(PWD),target=/project totais-siafi bash
+docker run -e GMAILR_KEY=$GMAILR_KEY -it --rm --mount type=bind,source=$(PWD),target=/project totais-siafi bash
 ```
 
 Uma vez dentro do container execute os comandos do make

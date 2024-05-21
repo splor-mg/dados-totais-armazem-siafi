@@ -1,14 +1,14 @@
 name: dados_totais_armazem_siafi
 resources:
-  - name: totais_siafi_cota
+  - name: totais_siafi_execucao_cota
     type: table
-    path: ["data-raw/totais_siafi_cota_current.csv", "data-raw/totais_siafi_cota_previous.csv"]
+    path: ["data-raw/totais_siafi_execucao_cota_current.csv", "data-raw/totais_siafi_execucao_cota_previous.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/totais_siafi_execucao.yaml
+    schema: schemas/totais_siafi_execucao_cota.yaml
 
   - name: totais_siafi_execucao
     type: table

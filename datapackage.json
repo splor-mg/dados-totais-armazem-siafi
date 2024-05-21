@@ -1,17 +1,50 @@
 {
-  "name": "armazem-siafi-totais-dados",
+  "name": "dados_totais_armazem_siafi",
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "totais_execucao_siafi",
+      "name": "totais_siafi_execucao_cota",
       "type": "table",
       "profile": "tabular-data-resource",
-      "path": "data/totais_execucao_siafi.csv",
+      "path": "data/totais_siafi_execucao_cota.csv",
       "scheme": "file",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:d65a6c184abf1daac5806fdd14fd4e5e2804381764df3ecd0c3ae857cc021074",
+      "hash": "sha256:f49b71c50f5ed67a5a2653300a6b7a5f691da31ad6847d730d726ab3d4790e09",
+      "bytes": 6018,
+      "fields": 3,
+      "rows": 269,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "vlr_cota_aprovada_liquida",
+            "type": "number",
+            "source": "Valor Cota Aprovada Líquida"
+          }
+        ]
+      }
+    },
+    {
+      "name": "totais_siafi_execucao",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/totais_siafi_execucao.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:d4a70b0bef8bc293c659d4d6a246e454b6997ec3d00a366b95fa42edd0343a89",
       "bytes": 20355,
       "fields": 7,
       "rows": 269,
@@ -51,11 +84,6 @@
             "name": "vlr_pago_financeiro",
             "type": "number",
             "source": "Valor Pago Financeiro"
-          },
-          {
-            "name": "vlr_cota_aprovada_liquida",
-            "type": "number",
-            "source": "Valor Cota Aprovada Líquida"
           }
         ]
       }
@@ -69,8 +97,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:f6236ea66630aa5d4cdfeb466b4f378c57294260022ac08baf65e5f5762d684f",
-      "bytes": 358785,
+      "hash": "sha256:d06f53a8c76e147114bba7762598bf0140cc1f3a9db1a71920785ea72d1cb83d",
+      "bytes": 358808,
       "fields": 45,
       "rows": 2049,
       "schema": {
@@ -304,5 +332,5 @@
       }
     }
   ],
-  "updated_at": "2024-05-20T09:49:00"
+  "updated_at": "2024-05-21T17:03:12"
 }

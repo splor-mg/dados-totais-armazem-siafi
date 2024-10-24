@@ -1,4 +1,10 @@
-
+get_attachment_name <- function(message_id) {
+  message <- gmailr::gm_message(message_id)
+  attachments <- gmailr::gm_attachments(message)
+  logger::log_info('Extracting attachment {attachments[["filename"]]}')
+  filename <- stringr::str_remove(attachments[["filename"]], "-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}")
+  filename
+}
 
 write_attachment <- function(message_id) {
   message <- gmailr::gm_message(message_id)

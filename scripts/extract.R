@@ -26,17 +26,20 @@ attachment_ids <- gmailr::gm_messages(search_query) |>
 
 attachments_count <- length(attachment_ids)
 
+
 if (datapackage_files_count != attachments_count) {
-  gmail_files <- purrr::map(attachment_ids, get_attachment_name)
+  
+  gmail_files <- purrr::map(attachment_ids, get_attachment_name) |> map(~ gsub("-", "_", .))
   extra_files <- setdiff(unlist(gmail_files), datapackage_files)
+  missing_files <- setdiff(datapackage_files, unlist(gmail_files))
+
   if(length(extra_files) > 0){
     logger::log_warn("O filtro de busca do gmail trouxe o arquivo adicional '{extra_files}'")
   }
-}
-  missing_files <- setdiff(datapackage_files, unlist(gmail_files))
+
   if(length(missing_files) > 0){
     logger::log_warn("O filtro de busca do gmail não trouxe o arquivo '{missing_files}'")
   }
-  stop(glue("Expected {datapackage_files_count} data files but only found {attachments_count} in gmail"))
-
+  stop(glue("Expected {datapackage_files_count} data files but found {attachments_count} in gmail"))
+}
 purrr::walk(attachment_ids,write_attachment)

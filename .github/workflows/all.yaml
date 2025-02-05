@@ -37,12 +37,12 @@ jobs:
         git config user.email "actions@users.noreply.github.com"
         make publish
 
-    - name: Trigger repository_dispatch in splor-mg/dados-armazem-siafi-2024
+    - name: Trigger repository_dispatch in splor-mg/dados-armazem-siafi-2025
       run: |
         curl -X POST \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token ${{ secrets.GH_PAT }}" \
-          https://api.github.com/repos/splor-mg/dados-armazem-siafi-2024/dispatches \
+          https://api.github.com/repos/splor-mg/dados-armazem-siafi-2025/dispatches \
           -d '{"event_type":"trigger-workflow"}'
 
     - name: Workflow failure notification

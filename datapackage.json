@@ -97,10 +97,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:2f4d24d45b0f53c31c6de75c7c4a63a59e65af7a8bc8ba2dbd9b210ee403f306",
-      "bytes": 377207,
+      "hash": "sha256:0219c70056087cac5f41a302c4970cab0ea750fa16c67eda137248a2fa5017ea",
+      "bytes": 377510,
       "fields": 45,
-      "rows": 2150,
+      "rows": 2152,
       "schema": {
         "fields": [
           {
@@ -332,5 +332,5 @@
       }
     }
   ],
-  "updated_at": "2025-02-05T12:20:14"
+  "updated_at": "2025-02-05T15:33:37"
 }

@@ -7,8 +7,8 @@ Imports:
     stringr,
     checks.execucao,
     logger,
-    read_datapackage
+    dpm
 Remotes:
-    github::splor-mg/checks-execucao
+    github::splor-mg/checks-execucao,
     github::splor-mg/dpm-r
 Encoding: UTF-8

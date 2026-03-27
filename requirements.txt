@@ -65,7 +65,7 @@ packaging==26.0
     # via
     #   build
     #   wheel
-pandas==3.0.1
+pandas>=2.0.0
     # via dpm
 petl==1.7.17
     # via frictionless
